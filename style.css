@@ -56,20 +56,16 @@
     color: #0065FC;
 }
 
-.introduction {
-    font-family: Raleway;
-    padding-top: 20px;
-}
-
 .trouvez {
     font-weight: 700;
     font-size: 27px;
+    margin-bottom: 5px;
 }
 
 .centre {
     font-weight: 400;
     font-size: 20px;
-    padding-top: 10px;
+    margin-top: 0;
 }
 
 .location {
@@ -81,6 +77,10 @@
     border-radius: 15px;
     width: max-content;
     margin-top: 25px;
+}
+
+.h2 {
+    font-size: 25px;
 }
 
 .fa-location-dot {
@@ -180,7 +180,7 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .fa-info {
@@ -207,7 +207,7 @@
 }
 
 .titreun {
-    padding: 47px 47px 25px;
+    padding-left: 50px;
     font-weight: 700;
     font-size: 28px;
 }
@@ -259,11 +259,13 @@
 .hotel {
     font-weight: 700;
     font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .nuit {
     font-size: 14px;
     margin: 5px 0 5px 0;
+    margin-top: 0px;
 }
 
 .paddingtrois {
@@ -293,7 +295,8 @@
 }
 
 .titredeux {
-    padding: 47px 47px 25px;
+    padding-left: 40px;
+    padding-right: 40px;
     font-weight: 700;
     font-size: 28px;
     display: flex;
@@ -301,7 +304,7 @@
 }
 
 .columndeux {
-    padding: 0 55px;
+    padding: 0 40px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -313,19 +316,21 @@
     display: flex;
     box-shadow: 3px 3px 20px 0px #C7C7C7;
     transition: transform 0.7s;
+    height: 200px;
+    position: relative;
 }
 
 .imghoteldeux {
     object-fit: cover;
     border-radius: 16px 0 0 16px;
     padding: 7px 8px;
-    width: 30%;
-    height: 130px;
+    width: 40%;
 }
 
 .hoteltrois {
     font-weight: 700;
     font-size: 19px;
+    margin: 0px;
 }
 
 .widthhoteldeux {
@@ -339,19 +344,22 @@
 
 .nuitdeux {
     padding-top: 10px;
+    margin: 0px;
     font-size: 14px;
 }
 
 .stardeux {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 12px;
+    position: absolute;
+    display: flex;
+    bottom: 0px;
 }
 
 .titretrois {
-    padding-top: 70px;
-    padding-bottom: 30px;
     font-weight: 700;
     font-size: 28px;
+    padding-top: 20px;
 }
 
 .activitesdeux {
@@ -420,20 +428,9 @@
 }
 
 .footerun {
-    margin-top: 25px;
     width: 33%;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
-}
-
-.paddingmiddle {
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.paddingbot {
-    padding-bottom: 20px;
 }
 
 .txt {
@@ -488,6 +485,9 @@
     .marseille {
         width: calc(100% - 70px - 60px)
     }
+    .vieuxport {
+        padding: 10px 0;
+    }
     .bordures {
         flex-direction: column-reverse;
         flex-wrap: wrap;
@@ -512,6 +512,9 @@
         width: 100%;
         height: initial;
     }
+    .paddingquatre {
+        padding: 5px;
+    }
     .widthactivites {
         width: 100%;
     }
@@ -527,12 +530,15 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
     .bordures {
         display: block;
     }
     .bordureune {
         width: 100%;
+    }
+    .titreun {
+        padding-top: 20px;
     }
     .borduredeux {
         width: 100%;
@@ -540,6 +546,9 @@
     .activitesdeux {
         flex-wrap: wrap;
         height: initial;
+    }
+    .afficher {
+        padding-bottom: 20px;
     }
     .widthactivites {
         width: calc(50% - 25px);
@@ -549,9 +558,12 @@
     }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1300px) {
+@media screen and (min-width: 992px) and (max-width: 1472px) {
     .body {
         margin: 30px;
+    }
+    .bordures {
+        gap: 20px;
     }
     .bordureune {
         width: 60%;
